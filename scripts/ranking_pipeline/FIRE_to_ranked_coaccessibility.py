@@ -5,6 +5,10 @@ import FIRE_stitcher
 import objPrep
 
 
+#
+# FIRE Ranking Pipeline
+# Outputs FIRE peak pairs ranked by co-accessibility
+#
 def build_pre_matrix(stitch_file, peak_file, acc_fiber_bed, output_name):
     # stitch_file = "/home/bmt26/garg/fiberSeq/FIRE/SE/FIRE_peaks_stitch_ROSElike"
     # output_name = "FIRE_peaks_stitch_ROSElike"

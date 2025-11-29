@@ -5,7 +5,8 @@ import json
 
 
 #
-# Generates intergenic whitelist regions
+# Stitches peaks for FIRE_to_ranked_coaccessibility.py
+# Does not stitch across selected gff features
 #
 
 

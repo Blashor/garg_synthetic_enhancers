@@ -1,6 +1,10 @@
 import json
 import sys
 
+#
+# converts bedtools intersect outputs to .json data structure which is read by fireAB_ranking.py
+#
+
 
 def prep_object(prefix):
     lines = []
