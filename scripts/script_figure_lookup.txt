@@ -1,0 +1,129 @@
+# import FIRE_venn
+
+
+"""
+FIRE_venn.main(f1="../data/3runs_ce_rank.txt", f2="../data/E12_michelle_ce_rank.txt", output="../figures/test_mi.svg")
+FIRE_venn.main(
+    f1="../data/ce_rank_michele_compatible.txt", f2="../data/E12_michelle_ce_rank.txt", output="../figures/test_mi.svg"
+)
+"""
+"""
+FIRE_venn.main(
+    f1="../data/3runs_ce_rank.txt", f2="../data/ce_rank_michele_compatible.txt", output="../figures/s5b_mm10.svg"
+)
+sys.exit()
+"""
+# import HockeyStickGraph
+
+# import Fiber_Size_Distribution
+# import FIRE_significance_v_size
+# import or_dist_bin
+
+# import FIRE_gff_distribution
+# import FIRE_venn
+import or_ecdf
+
+fps = [
+    "../data/ce_rank_no_dist_correctionyoungSE_OSN.txt",
+    "../data/ce_rank_no_dist_correctionyoungStitched_OSN.txt",
+    "../data/ce_rank_no_dist_correctionOSN_stitched_control0.txt",
+]
+or_ecdf.main(
+    fps, labels=["Super", "Stitched", "Control"], colors=["pink", "brown", "grey"], save="../figures/s4d_whyte_ecdf.svg"
+)
+
+sys.exit()
+HockeyStickGraph.main(fp="../data/3runs_ce_rank.txt", save="../figures/s3c_3runs_ce_rank_tangent.svg", tangent=True)
+# or_dist_bin.main_length(prefixes=["../data/3runsV2"], savefig="../figures/s3b_distance_bin.svg")
+sys.exit()
+#
+# Main 1
+#
+
+# 1a: Co-accessiblity Cartoon green
+"/Users/blake/Documents/gargLab/Figures_for_Box/Figure_1_Ranking/figures/1a_biorender_summary.png"
+
+# 1b: MSP Locus green
+# 1c: Hockey Stick green
+HockeyStickGraph.main(fp="../data/3runs_ce_rank.txt", save="../figures/1c_3runs_ce_rank.svg")
+
+# 1d: Gene expresion super v stitched green
+"see cluster1_nonile"
+
+# 1e: GM12878 Hockey green
+HockeyStickGraph.main(fp="../data/GM12878_ce_rank.txt", save="../figures/1e_GM12878_ce_rank.svg")
+
+# 1f: K562 Hockey green
+HockeyStickGraph.main(fp="../data/K562_ce_rank.txt", save="../figures/1f_K562_ce_rank.svg")
+
+#
+# Supplemental
+#
+
+# s1b: Pacbio read table green
+"/Users/blake/Documents/gargLab/Figures_for_Box/Figure_1_Ranking/figures/s1B_Read Data.docx"
+
+# s1c: Fiber size distribution green
+Fiber_Size_Distribution.main(file_name="../data/3runs-fire-fibers.bed", file_out="../figures/s1c_fiber_ecdf.svg")
+# RED get the fiber number
+
+# s2a: FIRE table type green (combined to s2b)
+# s2b: piechart FIRE type green
+FIRE_gff_distribution.main()
+
+# s2c: FIRE v. DNASE1 vs. ATAC green
+#
+# s2d: FIRE Size Distribution green
+Fiber_Size_Distribution.main(file_name="../data/3runs-FIRE.bed", file_out="../figures/s2d_fire_ecdf.svg")
+
+# s2D: FIRE len v. significance green
+FIRE_significance_v_size.main(input_bed="../data/3runs-FIRE.bed", output="../figures/s2d_3runs-FIRE.svg")
+
+
+
+# s3a: OR Cartoon green
+
+"ON LAB BIORENDER"
+# s3b: Distance v. Odds ratio scatter green red do error bars
+or_dist_bin.main_length(prefixes=["../data/3runsV2"], savefig="../figures/s3b_distance_bin.svg")
+
+# s3c: Hockey Tangent green
+HockeyStickGraph.main(fp="../data/3runs_ce_rank.txt", save="../figures/s3c_3runs_ce_rank_tangent.svg", tangent=True)
+
+# s3d: FIRE OR CDF green
+fps = [
+    "../data/3runs_ce_rank_no_dist_correction.txt",
+    "/Users/blake/Documents/gargLab/for_github/ranking_fisher_1/ranked_pipeline/data/ce_rank_no_dist_correctionfire_stitched_control0.txt",
+]
+or_ecdf.main(fps, labels=["Stitched", "Control"], save="../figures/s3d_fire_ecdf.svg")
+
+# s4a: gene expression v. deciled OR red, maybe do on unclustered if that looks best
+
+# s4b: FIRE v OSN bar
+"fire_story_v3/_cluster_analysis"
+
+# s4c: FIRE v. other enhancers orange
+
+# s4d: Whyte OR CDF green
+fps = [
+    "../data/ce_rank_no_dist_correctionyoungSE_OSN.txt",
+    "../data/ce_rank_no_dist_correctionyoungStitched_OSN.txt",
+    "../data/ce_rank_no_dist_correctionOSN_stitched_control3.txt",
+]
+or_ecdf.main(
+    fps, labels=["Super", "Stitched", "Control"], colors=["pink", "brown", "grey"], save="../figures/s4d_whyte_ecdf.svg"
+)
+
+# s4e: cluster metagene pink
+# s4f: Cluster 1-3 split gene expression orange
+# red s4d change the table to old look in box
+# s5a: e12 Hockey green
+HockeyStickGraph.main(fp="../data/E12_michelle_ce_rank.txt", save="../figures/s5a_E12_michelle_ce_rank.svg")
+
+# s5b: venn diagram f123 v65 green, do a scatter plot of the peaks
+FIRE_venn.main(
+    f1="../data/3runs_ce_rank.txt", f2="../data/ce_rank_michele_compatible.txt", output="../figures/s5b_mm10.svg"
+)
+
+# s5c: venn f123 gm12878 k562 green
+FIRE_venn.main(f1="../data/GM12878_ce_rank.txt", f2="../data/K562_ce_rank.txt", output="../figures/s5c_hg38.svg")
