@@ -81,3 +81,60 @@ FIRE_venn.main(
 
 # s5c: venn f123 gm12878 k562 green
 FIRE_venn.main(f1="../data/GM12878_ce_rank.txt", f2="../data/K562_ce_rank.txt", output="../figures/s5c_hg38.svg")
+
+
+
+
+
+# red 2a) Cartoon
+# red 2a) Track Prep
+
+# green 2b) Neural ROC
+import basenji_auc
+
+# green 2c) Scatter
+import basenji_scatter
+
+# yellow 2d) Triangles
+
+# S6a
+# S6b
+
+
+# 3a green Cartoon
+
+# 3b INSIDE OR, cluster 1 gen 300
+# 3b "" uncluster model
+# 3b Box whisper of motif number v modified OR
+
+# 3c cytoscape of motif appearance
+
+# 3d INSIDE relative motif positions
+
+# 3e INSIDE gc content per gen change line graph (all reps)
+
+# 3f INSIDE recenter motif analysis gens showing main motif and GC evolution built by model
+
+
+# S7A NSIDE enhancer length, margin length, central length v generation
+
+# S7B INSIDE mut rate v evolved odds ratio
+
+# S7C OR per gen showing inflection per generation
+
+# S7D analysis of how replicates differ from ea chother in odds ratio
+
+# S7E INSIDE loss / gain (something w red blue)
+
+
+# S8A INSIDE gen vs Factor motif emergence
+
+# S8A INSIDE motif num median odds ratio
+
+# S8B INSIDE postion v motif emergence over gens for 1 factor
+
+# S8C Motif co-occurence matrix
+
+# S8D Factor Factor pairwise distance bargraph
+
+# S8E Analysis of GC content change position
