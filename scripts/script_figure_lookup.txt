@@ -1,60 +1,23 @@
-# import FIRE_venn
-
-
-"""
-FIRE_venn.main(f1="../data/3runs_ce_rank.txt", f2="../data/E12_michelle_ce_rank.txt", output="../figures/test_mi.svg")
-FIRE_venn.main(
-    f1="../data/ce_rank_michele_compatible.txt", f2="../data/E12_michelle_ce_rank.txt", output="../figures/test_mi.svg"
-)
-"""
-"""
-FIRE_venn.main(
-    f1="../data/3runs_ce_rank.txt", f2="../data/ce_rank_michele_compatible.txt", output="../figures/s5b_mm10.svg"
-)
-sys.exit()
-"""
-# import HockeyStickGraph
-
-# import Fiber_Size_Distribution
-# import FIRE_significance_v_size
-# import or_dist_bin
-
-# import FIRE_gff_distribution
-# import FIRE_venn
-import or_ecdf
-
-fps = [
-    "../data/ce_rank_no_dist_correctionyoungSE_OSN.txt",
-    "../data/ce_rank_no_dist_correctionyoungStitched_OSN.txt",
-    "../data/ce_rank_no_dist_correctionOSN_stitched_control0.txt",
-]
-or_ecdf.main(
-    fps, labels=["Super", "Stitched", "Control"], colors=["pink", "brown", "grey"], save="../figures/s4d_whyte_ecdf.svg"
-)
-
-sys.exit()
-HockeyStickGraph.main(fp="../data/3runs_ce_rank.txt", save="../figures/s3c_3runs_ce_rank_tangent.svg", tangent=True)
-# or_dist_bin.main_length(prefixes=["../data/3runsV2"], savefig="../figures/s3b_distance_bin.svg")
-sys.exit()
 #
 # Main 1
 #
 
 # 1a: Co-accessiblity Cartoon green
-"/Users/blake/Documents/gargLab/Figures_for_Box/Figure_1_Ranking/figures/1a_biorender_summary.png"
+biorender
 
 # 1b: MSP Locus green
-# 1c: Hockey Stick green
-HockeyStickGraph.main(fp="../data/3runs_ce_rank.txt", save="../figures/1c_3runs_ce_rank.svg")
+# 1c: Hockey Stick 
+ranking_pipeline
+
 
 # 1d: Gene expresion super v stitched green
-"see cluster1_nonile"
+"see cluster1_nonile.py"
 
 # 1e: GM12878 Hockey green
-HockeyStickGraph.main(fp="../data/GM12878_ce_rank.txt", save="../figures/1e_GM12878_ce_rank.svg")
+ranking_pipeline
 
 # 1f: K562 Hockey green
-HockeyStickGraph.main(fp="../data/K562_ce_rank.txt", save="../figures/1f_K562_ce_rank.svg")
+ranking_pipeline
 
 #
 # Supplemental
@@ -64,38 +27,35 @@ HockeyStickGraph.main(fp="../data/K562_ce_rank.txt", save="../figures/1f_K562_ce
 "/Users/blake/Documents/gargLab/Figures_for_Box/Figure_1_Ranking/figures/s1B_Read Data.docx"
 
 # s1c: Fiber size distribution green
-Fiber_Size_Distribution.main(file_name="../data/3runs-fire-fibers.bed", file_out="../figures/s1c_fiber_ecdf.svg")
-# RED get the fiber number
+Fiber_Size_Distribution.py
 
 # s2a: FIRE table type green (combined to s2b)
 # s2b: piechart FIRE type green
-FIRE_gff_distribution.main()
+FIRE_gff_distribution.py
 
 # s2c: FIRE v. DNASE1 vs. ATAC green
 #
 # s2d: FIRE Size Distribution green
-Fiber_Size_Distribution.main(file_name="../data/3runs-FIRE.bed", file_out="../figures/s2d_fire_ecdf.svg")
+Fiber_Size_Distribution.py
 
 # s2D: FIRE len v. significance green
-FIRE_significance_v_size.main(input_bed="../data/3runs-FIRE.bed", output="../figures/s2d_3runs-FIRE.svg")
+FIRE_significance_v_size.py
 
 
 
 # s3a: OR Cartoon green
+biorender
 
 "ON LAB BIORENDER"
 # s3b: Distance v. Odds ratio scatter green red do error bars
-or_dist_bin.main_length(prefixes=["../data/3runsV2"], savefig="../figures/s3b_distance_bin.svg")
+or_dist_bin.py
 
 # s3c: Hockey Tangent green
-HockeyStickGraph.main(fp="../data/3runs_ce_rank.txt", save="../figures/s3c_3runs_ce_rank_tangent.svg", tangent=True)
+HockeyStickGraph.py
 
 # s3d: FIRE OR CDF green
-fps = [
-    "../data/3runs_ce_rank_no_dist_correction.txt",
-    "/Users/blake/Documents/gargLab/for_github/ranking_fisher_1/ranked_pipeline/data/ce_rank_no_dist_correctionfire_stitched_control0.txt",
-]
-or_ecdf.main(fps, labels=["Stitched", "Control"], save="../figures/s3d_fire_ecdf.svg")
+
+or_ecdf.py
 
 # s4a: gene expression v. deciled OR red, maybe do on unclustered if that looks best
 
@@ -105,14 +65,8 @@ or_ecdf.main(fps, labels=["Stitched", "Control"], save="../figures/s3d_fire_ecdf
 # s4c: FIRE v. other enhancers orange
 
 # s4d: Whyte OR CDF green
-fps = [
-    "../data/ce_rank_no_dist_correctionyoungSE_OSN.txt",
-    "../data/ce_rank_no_dist_correctionyoungStitched_OSN.txt",
-    "../data/ce_rank_no_dist_correctionOSN_stitched_control3.txt",
-]
-or_ecdf.main(
-    fps, labels=["Super", "Stitched", "Control"], colors=["pink", "brown", "grey"], save="../figures/s4d_whyte_ecdf.svg"
-)
+
+or_ecdf.py
 
 # s4e: cluster metagene pink
 # s4f: Cluster 1-3 split gene expression orange
