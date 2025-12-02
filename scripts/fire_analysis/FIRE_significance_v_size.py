@@ -9,6 +9,11 @@ mpl.use("Agg")
 from matplotlib import pyplot as plt
 
 
+#
+# Plots FIRE element size vs. model called significance
+#
+
+
 def main(input_bed="../data/3runs-FIRE.bed", output="../figures/s2e_3runs-FIRE.svg"):
     print("go")
     # plt.figure()

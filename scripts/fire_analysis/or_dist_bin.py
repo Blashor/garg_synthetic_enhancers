@@ -9,6 +9,11 @@ import mpl_style
 import numpy as np
 
 
+#
+# Median odds ratio of FIRE pairs at given distance bins
+#
+
+
 def numPts_below_line(myVector, slope, x):
     yPt = myVector[x]
     b = yPt - (slope * x)

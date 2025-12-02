@@ -8,6 +8,10 @@ import seaborn as sns
 import mpl_style
 import numpy as np
 
+#
+# Plot eCDF from ranked_pipeline's pair odds ratio .txt output
+#
+
 
 def jitter_array(arr, jitter_strength=0.03):
     arr = np.array(arr)

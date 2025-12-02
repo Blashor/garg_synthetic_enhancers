@@ -14,6 +14,11 @@ import random
 from scipy.optimize import curve_fit
 
 
+#
+# Plot Hockey Stick from ranking_pipeline ranked ce pair .txt output
+#
+
+
 def numPts_below_line(myVector, slope, x):
     yPt = myVector[x]
     b = yPt - (slope * x)

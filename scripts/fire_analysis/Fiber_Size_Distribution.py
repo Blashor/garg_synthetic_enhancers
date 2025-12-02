@@ -6,6 +6,9 @@ import mpl_style
 import numpy as np
 
 
+#
+# eCDF of bed file element sizes
+#
 def main(file_name="../data/3runs-FIRE.bed", file_out=""):
     mpl_style.set_style(figsize=(4.5, 4.5))
     # plt.figure()
