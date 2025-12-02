@@ -65,8 +65,10 @@ s5c: venn f123 gm12878 k562
 2d: Triangles
     fire_triangle_from_short.py
 
-s6a
-s6b
+s6a: Distance 
+    hic_vs_FIRE_interaction_strata.py
+s6b: Triangles
+    fire_triangle_from_short.py
 
 
 3a INSIDE Cartoon
@@ -76,11 +78,11 @@ s6b
 3c cytoscape of motif appearance
     fimo_weighted_network.py
 3d INSIDE relative motif positions
-
+    fimo_motif_distribution.py
 3e INSIDE gc content per gen change line graph (all reps)
     INSIDE_to_graph.py#calc_gc
 3f INSIDE recenter motif analysis gens showing main motif and GC evolution built by model
-
+    align_by_fimo_motif.py
 
 s7A INSIDE enhancer length, margin length, central length v generation
     INSIDE_to_graph.py
@@ -91,17 +93,15 @@ s7C OR per gen showing inflection per generation
 s7D analysis of how replicates differ from ea chother in odds ratio
     fimo_fail_to_rise.py
 s7E INSIDE loss / gain (something w blue)
-    
-    
-s8A INSIDE gen vs Factor motif emergence
+    loss_file_aggregator_INSIDE.py
 
-s8A INSIDE motif num median odds ratio
-
+s8A INSIDE gen vs Factor motif emergence, s8A INSIDE motif num median odds ratio
+    fimo_motif_line.py
 s8B INSIDE postion v motif emergence over gens for 1 factor
-
+    INSIDE_motif_analysis.py#meta_motif_by_gen
 s8C Motif co-occurence matrix
     fimo_cooccurrence.py
-
 s8D Factor Factor pairwise distance bargraph
-
+    fimo_motif_distribution.py
 s8E Analysis of GC content change position
+    INSIDE_map_snps.py, gc_by_gen_heatmap.py
