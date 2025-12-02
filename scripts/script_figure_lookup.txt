@@ -10,10 +10,12 @@
     ranking_pipeline
 1f: K562 Hockey 
     ranking_pipeline
+
 s1b: Pacbio read table 
     "/Users/blake/Documents/gargLab/Figures_for_Box/Figure_1_Ranking/figures/s1B_Read Data.docx"
 s1c: Fiber size distribution 
     Fiber_Size_Distribution.py
+
 s2a/s2b: piechart FIRE type + FIRE table type  (combined to s2b)
     FIRE_gff_distribution.py
 s2c: FIRE v. DNASE1 vs. ATAC 
@@ -22,6 +24,7 @@ s2d: FIRE Size Distribution
     Fiber_Size_Distribution.py
 s2D: FIRE len v. significance 
     FIRE_significance_v_size.py
+
 s3a: OR Cartoon 
     biorender
 s3b: Distance v. Odds ratio scatter
@@ -30,26 +33,28 @@ s3c: Hockey Tangent
     HockeyStickGraph.py
 s3d: FIRE OR CDF 
     or_ecdf.py
+
 s4a: gene expression v. deciled OR
     cluster1_nonile.py
 s4b: FIRE v OSN bar
     "fire_story_v3/_cluster_analysis"
 s4c: FIRE v. other enhancers 
-
+    cluster_overlap_analysis.py
 s4d: Whyte OR CDF 
     or_ecdf.py
-red
 s4e: cluster metagene 
+    ce_rank_to_metagene_cluster.py
 s4f: Cluster 1-3 split gene expression 
+    cluster1_nonile.py
 s4d change the table to old look in box
+    cluster_hyper_geometric_table.py
+
 s5a: e12 Hockey 
     HockeyStickGraph.py
 s5b: venn diagram f123 v65 , do a scatter plot of the peaks
     FIRE_venn.py
 s5c: venn f123 gm12878 k562 
     FIRE_venn.py
-
-
 
 2a: Cartoon Track Prep
     biorender
@@ -59,17 +64,15 @@ s5c: venn f123 gm12878 k562
     basenji_scatter.py
 2d: Triangles
     fire_triangle_from_short.py
-S6a
-S6b
+
+s6a
+s6b
 
 
 3a INSIDE Cartoon
     biorender
-
-3b INSIDE OR, cluster 1 gen 300
-3b "" uncluster model
-3b Box whisper of motif number v modified OR
-    violin_lineplot_over.py
+3b INSIDE OR, cluster 1 gen 300, 3b "" uncluster model, 3b Box whisper of motif number v modified OR
+    violin_lineplot_over.py, INSIDE_to_graph.py
 3c cytoscape of motif appearance
     fimo_weighted_network.py
 3d INSIDE relative motif positions
@@ -79,26 +82,26 @@ S6b
 3f INSIDE recenter motif analysis gens showing main motif and GC evolution built by model
 
 
-S7A INSIDE enhancer length, margin length, central length v generation
+s7A INSIDE enhancer length, margin length, central length v generation
     INSIDE_to_graph.py
-S7B INSIDE mut rate v evolved odds ratio
+s7B INSIDE mut rate v evolved odds ratio
     INSIDE_to_graph.py
-S7C OR per gen showing inflection per generation
+s7C OR per gen showing inflection per generation
     INSIDE_output_to_second_deriv.py
-S7D analysis of how replicates differ from ea chother in odds ratio
+s7D analysis of how replicates differ from ea chother in odds ratio
     fimo_fail_to_rise.py
-S7E INSIDE loss / gain (something w blue)
+s7E INSIDE loss / gain (something w blue)
     
+    
+s8A INSIDE gen vs Factor motif emergence
 
-S8A INSIDE gen vs Factor motif emergence
+s8A INSIDE motif num median odds ratio
 
-S8A INSIDE motif num median odds ratio
+s8B INSIDE postion v motif emergence over gens for 1 factor
 
-S8B INSIDE postion v motif emergence over gens for 1 factor
-
-S8C Motif co-occurence matrix
+s8C Motif co-occurence matrix
     fimo_cooccurrence.py
 
-S8D Factor Factor pairwise distance bargraph
+s8D Factor Factor pairwise distance bargraph
 
-S8E Analysis of GC content change position
+s8E Analysis of GC content change position
