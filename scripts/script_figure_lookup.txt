@@ -63,32 +63,32 @@ S6a
 S6b
 
 
-3a  Cartoon
-    bioredner
+3a INSIDE Cartoon
+    biorender
 
 3b INSIDE OR, cluster 1 gen 300
 3b "" uncluster model
 3b Box whisper of motif number v modified OR
-
+    violin_lineplot_over.py
 3c cytoscape of motif appearance
-
+    fimo_weighted_network.py
 3d INSIDE relative motif positions
 
 3e INSIDE gc content per gen change line graph (all reps)
-
+    INSIDE_to_graph.py#calc_gc
 3f INSIDE recenter motif analysis gens showing main motif and GC evolution built by model
 
 
 S7A INSIDE enhancer length, margin length, central length v generation
-
+    INSIDE_to_graph.py
 S7B INSIDE mut rate v evolved odds ratio
-
+    INSIDE_to_graph.py
 S7C OR per gen showing inflection per generation
-
+    INSIDE_output_to_second_deriv.py
 S7D analysis of how replicates differ from ea chother in odds ratio
-
+    fimo_fail_to_rise.py
 S7E INSIDE loss / gain (something w blue)
-
+    
 
 S8A INSIDE gen vs Factor motif emergence
 
@@ -97,6 +97,7 @@ S8A INSIDE motif num median odds ratio
 S8B INSIDE postion v motif emergence over gens for 1 factor
 
 S8C Motif co-occurence matrix
+    fimo_cooccurrence.py
 
 S8D Factor Factor pairwise distance bargraph
 
