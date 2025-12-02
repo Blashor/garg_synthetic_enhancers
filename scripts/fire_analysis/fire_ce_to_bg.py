@@ -1,3 +1,6 @@
+#
+# FIRE ce rank file to bedgraph
+#
 bg_dict = {}
 with open("../data/GM12878_ce_rank.txt") as file:
     for line in file:

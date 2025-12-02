@@ -3,7 +3,9 @@ import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# hypergeometric
+#
+# FIRE to chia, osn, super hypergeometric table
+#
 
 
 def FIRE_super_to_bed():

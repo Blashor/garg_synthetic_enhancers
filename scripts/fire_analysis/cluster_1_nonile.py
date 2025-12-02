@@ -6,6 +6,9 @@ from scipy import stats
 ce_to_cluster = {}
 
 cluster_labels = {}
+#
+# Gene expression by FIRE metagene cluster
+#
 
 
 def get_gene_connection():

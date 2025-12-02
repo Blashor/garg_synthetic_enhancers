@@ -3,6 +3,10 @@ import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#
+# Generate table for osn and fire overlaps
+#
+
 
 def chia_to_bed():
     chia_lines = []

@@ -6,6 +6,10 @@ import seaborn as sns
 import os
 import numpy as np
 
+#
+# Piechart of Fire Elements (labeled via gff overlap)
+#
+
 fire_peaks = "../data/3runs-FDR-FIRE-peaks.bed"
 fire_intergenic = "../data/3runV2_intergenic.bed"
 fire_genic = "../data/3runV2_genic.bed"

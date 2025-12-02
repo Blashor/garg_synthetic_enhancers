@@ -7,6 +7,9 @@ import mpl_style
 import numpy as np
 
 
+#
+# bed element gc content
+#
 def get_gc(seq):
     gc = 0
     if "N" not in seq:
