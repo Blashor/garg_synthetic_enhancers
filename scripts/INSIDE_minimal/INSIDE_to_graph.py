@@ -7,6 +7,10 @@ import Bio.SeqUtils
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#
+# INSIDE odds ratio vs. generation
+#
+
 
 def set_style(figsize=(4, 3)):
     fig = plt.figure(figsize=figsize)

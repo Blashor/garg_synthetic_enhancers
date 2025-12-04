@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
+#
+# Relative motif positions to selected centered motif
+#
 
 allowed_motifs = set(
     [

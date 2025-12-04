@@ -7,6 +7,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
+
+#
+# Weblogo displayed alignment of selected fimo motif
+#
 tsv_lines = []
 # INSIDE_256_g117.out
 with open("INSIDE_jun13.txt") as file:

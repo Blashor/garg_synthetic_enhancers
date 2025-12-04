@@ -7,6 +7,10 @@ from scipy.ndimage import gaussian_filter1d
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#
+# Display derivative or 2nd derivative of  INSIDE odds ratio vs. generation
+#
+
 
 def smoothed_gradient(y, x=None, span=20):
     """

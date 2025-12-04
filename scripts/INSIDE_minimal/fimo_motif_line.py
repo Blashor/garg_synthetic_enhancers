@@ -4,6 +4,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+#
+# Plots # of motif occurences vs. generation
+#
+
+
 # fimo_motif_line
 def meta_motif_by_gen():
     motif_gen_obj = {}

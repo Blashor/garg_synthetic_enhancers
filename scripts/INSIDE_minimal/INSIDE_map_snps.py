@@ -6,6 +6,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
+#
+# heatmap of unique snp occurences (each row represents a generation)
+#
+
 
 def find_differences(str1, str2):
     if len(str1) != len(str2):

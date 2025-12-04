@@ -4,6 +4,10 @@ import sys
 
 from PIL import Image
 
+#
+# Aggregates basenji generated SAT files by selected generations
+#
+
 working_dir = "/Users/blake/Downloads/sat_output"
 
 combo_dir = "loss_file_together"

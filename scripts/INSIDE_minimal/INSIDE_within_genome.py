@@ -10,13 +10,11 @@ import copy
 
 
 ###
-# INSIDE.py
+# INSIDE_within_genome.py
 #
 # in silico directed evolution of sequence via basneji selection
 #
-# 1. Generates random sequences (including synthetic fastas + .bed to access)
-# 2. Call basenji_predict_bed.py to score sequences
-# 3. Select best children -> Repeat
+# Occurs within fasta file selected genetic context
 ###
 def chrome_parser(chrom_str):
     chrom, coords = chrom_str.split(":")

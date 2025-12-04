@@ -7,6 +7,10 @@ import math
 import matplotlib.cm as cm
 import random
 
+#
+# networkx style visual of motif occurences
+#
+
 
 def rearrange_adjacent(sorted_arr):
     n = len(sorted_arr)

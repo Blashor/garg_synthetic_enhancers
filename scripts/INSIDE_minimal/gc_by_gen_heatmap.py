@@ -8,6 +8,10 @@ import seaborn as sns
 import numpy as np
 import random
 
+#
+# GC-content heatmap (each row represents a generation)
+#
+
 
 def random_shift(seq, seed=None):
     if seed is not None:

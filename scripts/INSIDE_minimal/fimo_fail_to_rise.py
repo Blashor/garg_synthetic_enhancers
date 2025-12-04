@@ -9,6 +9,11 @@ import os
 import numpy as np
 
 
+#
+# Motif labeled of plots below selected y-value threshold
+#
+
+
 def smooth_array(data_array, window_size=4):
     smoothed = np.zeros_like(data_array, dtype=float)
     n = len(data_array)

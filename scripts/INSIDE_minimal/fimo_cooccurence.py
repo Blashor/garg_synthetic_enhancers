@@ -6,6 +6,10 @@ import math
 import matplotlib.cm as cm
 import random
 
+#
+# Matrix of fimo motif cooccurences
+#
+
 
 def plot_motif_cooccurrence(motif_sets):
     # Get all unique motifs

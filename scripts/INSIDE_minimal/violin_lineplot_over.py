@@ -7,6 +7,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
+
+#
+# Plots boxplot of motif occurence distribution underneath graph of odds ratio vs. generation
+#
+
 # sns.set_style("whitegrid")
 tsv_lines = []
 # INSIDE_256_g117.out

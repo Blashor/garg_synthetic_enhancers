@@ -9,13 +9,9 @@ import json
 import copy
 
 ###
-# INSIDE.py
 #
-# in silico directed evolution of sequence via basneji selection
+# Scores INSIDE children on a different model with no selection
 #
-# 1. Generates random sequences (including synthetic fastas + .bed to access)
-# 2. Call basenji_predict_bed.py to score sequences
-# 3. Select best children -> Repeat
 ###
 
 

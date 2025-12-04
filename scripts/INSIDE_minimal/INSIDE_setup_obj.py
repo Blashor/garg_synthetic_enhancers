@@ -8,6 +8,10 @@ import pybedtools
 import json
 import copy
 
+#
+# Create input file of experimental variations to run with INSIDE.py
+#
+
 
 def setup_obj_helper(file_name, new_enh_lens=[], new_center_lens=[], mut_rates=[], margins=[]):
     setup_obj = {}

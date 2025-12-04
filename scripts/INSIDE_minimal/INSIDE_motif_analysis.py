@@ -8,7 +8,7 @@ import numpy as np
 
 
 #
-#
+# Runs fimo on INSIDE output
 #
 
 surv = 1
