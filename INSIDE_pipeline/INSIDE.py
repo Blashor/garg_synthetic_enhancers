@@ -276,6 +276,8 @@ def read_setup_json(j_path):
     return setup_obj
 
 
+os.system("mkdir -p ../INSIDE")
+
 setup_obj = read_setup_json(sys.argv[1])
 
 working_dir = "../INSIDE/" + sys.argv[1] + "/"
