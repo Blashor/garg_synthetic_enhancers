@@ -1,0 +1,4 @@
+index	identifier	file	clip	sum_stat	description
+0	esc1	../data/ce_score.bw	300	sum	fiberseq_3a_escs
+1	esc2	../data/bin128_fire_max.bw	300	sum	fiberseq_3b_escs
+2	esc3	../data/fire_num_norm.bw	100	sum	fiberseq_3c_escs

@@ -1,0 +1,7 @@
+index	identifier	file	clip	sum_stat	description
+0	escA	../data/ce_score.bw	300	sum	fseqA
+1	esc1	../data/fire_clusters/cluster_1_ce_score.bw	300	sum	fseqB
+2	esc2	../data/fire_clusters/cluster_2_ce_score.bw	300	sum	fseqC
+3	esc3	../data/fire_clusters/cluster_3_ce_score.bw	300	sum	fseqD
+4	esc4	../data/bin128_fire_intergenic_max.bw	300	sum	bin128
+5	esc5	../data/fire_num_norm.bw	100	sum	access
