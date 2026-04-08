@@ -1,0 +1,22 @@
+Processed 'data' files are hosted at "ZENODO":
+
+10.5281/zenodo.19463376
+
+data.zip should be uncompressed and placed in figure_generation/
+model_input_data.zip contains bigwig tracks used to train basenji models
+gastruloids.zip contains images of shh gastruloids
+
+The following 'data' files are hosted externally:
+
+	Description	File Name	Source
+	GRCm38 FASTA	GRCm38.primary_assembly.genome.fa	https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M23/GRCm38.primary_assembly.genome.fa.gz
+	GRCm38 GFF	gencode.vM23.annotation.gff3	https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M23/gencode.vM23.annotation.gff3.gz
+	Micro-C		4DNFI6HG4GP3.hic	https://data.4dnucleome.org/files-processed/4DNFI6HG4GP3/
+	H3K27ac	SRX027332.bw	https://chip-atlas.dbcls.jp/data/mm10/eachData/bw/SRX027332.bw
+	CTCF	SRX000540.bw	https://chip-atlas.dbcls.jp/data/mm10/eachData/bw/SRX000540.bw
+	H3K4me1	SRX000583.bw	https://chip-atlas.dbcls.jp/data/mm10/eachData/bw/SRX000583.bw
+	Med1	SRX022695.bw	https://chip-atlas.dbcls.jp/data/mm10/eachData/bw/SRX022695.bw
+	p300	SRX143842.bw	https://chip-atlas.dbcls.jp/data/mm10/eachData/bw/SRX143842.bw
+	DNAseI	SRX10040677.05.bed	https://chip-atlas.dbcls.jp/data/mm10/eachData/bed05/SRX10040677.05.bed
+	ATAC	SRX23682289.05.bed	https://chip-atlas.dbcls.jp/data/mm10/eachData/bed05/SRX23682289.05.bed
+	Mouse Motifs	HOCOMOCOv11_core_MOUSE_mono_meme_format.meme	https://hocomoco11.autosome.org/final_bundle/hocomoco11/core/MOUSE/mono/HOCOMOCOv11_core_MOUSE_mono_meme_format.meme
