@@ -293,6 +293,6 @@ for f_name, filter_set in (("WW", {"AT", "AA", "TA", "TT"}), ("S", {"G", "C"})):
     plt.legend(loc="upper right")
     plt.ylim([-0.15, 0.20])
     plt.xlim([0, 45])
-    plt.savefig(f"40_{f_name}_ac.svg")
+    plt.savefig(f"../figures/s10e_40_{f_name}_ac.svg")
 # plt.show()
 # print(max_len)

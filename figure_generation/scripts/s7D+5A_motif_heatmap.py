@@ -172,8 +172,8 @@ def meta_motif_by_gen():
 
 pval = 10**-6
 allowed_motifs = set(["REST", "SOX2", "ZIC3", "NANOG", "OCT4", "CTCF"])
-# INSIDE_file = "INSIDE_1000.txt"
+INSIDE_file = "INSIDE_1000.txt"
 fimo_folder = "../data/INSIDE_40_definitive"
-# generate_fimo()
+generate_fimo()
 # motif_by_gen(36)
 meta_motif_by_gen()

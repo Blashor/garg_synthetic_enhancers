@@ -182,5 +182,5 @@ for motif_id in ecdf_holder:
         #plt.show()
         plt.savefig(f"../figures/relative_motif_within_across_INSIDE_def/{motif_id}noplot.svg", dpi=300)
         #plt.close()
-with open("../data/relative_motif_sinefit.tsv","w") as file:
+with open("../data/5c_relative_motif_sinefit.tsv","w") as file:
     file.writelines(period_output)

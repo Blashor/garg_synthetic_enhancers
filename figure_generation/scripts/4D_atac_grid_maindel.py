@@ -118,5 +118,5 @@ sns.heatmap(
 # plt.ylabel("Samples")
 # plt.xlabel("Region")
 plt.tight_layout()
-plt.savefig("../figures/maindel.svg")
+plt.savefig("../figures/4d_maindel.svg")
 plt.show()

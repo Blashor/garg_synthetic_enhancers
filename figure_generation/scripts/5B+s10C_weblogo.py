@@ -42,7 +42,7 @@ with open("../data/INSIDE_jun13.txt") as file:
             line_seq_holder[cell[1]][cell[0]] = []
         line_seq_holder[cell[1]][cell[0]].append((cell[2], cell[3]))
 # print(line_seq_holder)
-with open("fimo_40_160/fimo.tsv") as file:
+with open("../data/INSIDE_40_definitive/fimo.tsv") as file:
     # with open("fimo_klf4/fimo.tsv") as file:
     for line in file:
         cell = line.split("\t")
@@ -64,7 +64,7 @@ with open("fimo_40_160/fimo.tsv") as file:
                 line_seq_holder[line_name][gen].append((motif, m_pos, cell[-1].strip()))
 bag_of_motifs = ["SOX2", "NANOG", "ZIC3", "BACH2", "LEF1", "CTCF"]
 for motif_of_choice in bag_of_motifs:
-    os.system(f"mkdir -p weblogos/{motif_of_choice}")
+    os.system(f"mkdir -p ../figures/{motif_of_choice}")
     # os.system(f"mkdir -p weblogos/{motif_of_choice}_no_title")
     # os.system(f"mkdir -p weblogos/{motif_of_choice}_only_gens")
     dist_from_start = 32
@@ -104,7 +104,7 @@ for motif_of_choice in bag_of_motifs:
             file.writelines(fasta_lines)
         gen_nice = gen.replace("G", "Generation:\\ ")
         os.system(
-            f"weblogo --aspect-ratio 30 --color-scheme classic --stacks-per-line 100 --resolution 300 --format PDF --title {gen_nice} < weblogo.fa > ../figures/{motif_of_choice}/{motif_of_choice}_{gen}.pdf"
+            f"weblogo --aspect-ratio 30 --color-scheme classic --stacks-per-line 100 --resolution 300 --format PDF --title {gen_nice} < ../data/weblogo.fa > ../figures/{motif_of_choice}/def_{motif_of_choice}_{gen}.pdf"
         )
         """
         os.system(

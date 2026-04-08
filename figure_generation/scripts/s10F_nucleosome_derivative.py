@@ -45,7 +45,7 @@ for ce_mode in range(2):
     true_coords_by_chrom = defaultdict(list)
     enhs = []
 
-    with open("/Users/blake/Documents/gargLab/Figures_for_Box/Figure_1_Ranking/data/3runs_ce_rank.txt") as file:
+    with open("../data/3runs_ce_rank.txt") as file:
         for line in file:
             if ce_mode == 0 and "Super" in line:
                 cell = line.split("\t")
@@ -157,4 +157,5 @@ for ce_mode in range(2):
 plt.ylabel("Mutation Percent Derivative")
 plt.legend()
 plt.tight_layout()
+plt.savefig("../figures/s10f_nuc_deriv.svg")
 plt.show()

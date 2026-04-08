@@ -311,5 +311,5 @@ set_style(ax1)
 # fig.subplots_adjust(bottom=0.25)
 # Adjust layout to prevent overlap
 fig.tight_layout()
-# plt.savefig("Violin_lineplot.svg", dpi=200)
+plt.savefig("../figures/3c_lineplot.svg", dpi=200)
 plt.show()

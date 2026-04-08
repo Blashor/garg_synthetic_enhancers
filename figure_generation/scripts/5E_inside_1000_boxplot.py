@@ -370,5 +370,5 @@ set_style(ax1)
 fig.subplots_adjust(bottom=0.25)
 # Adjust layout to prevent overlap
 fig.tight_layout()
-plt.savefig("../figures/4b_1000.svg", dpi=200)
+plt.savefig("../figures/5e_1000.svg", dpi=200)
 plt.show()

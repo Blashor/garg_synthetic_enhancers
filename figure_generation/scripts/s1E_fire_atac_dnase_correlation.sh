@@ -1,16 +1,5 @@
 #!/bin/bash
 
-#SBATCH --job-name=fire_story_v3
-#SBATCH --partition=ycga
-#SBATCH --nodes=1
-#SBATCH --ntasks=1
-#SBATCH --time=1-00:00:00
-#SBATCH --cpus-per-task=32
-#SBATCH --mem=32G
-#SBATCH --output=scripts/sbatchOutput/firev3_%j.out
-#SBATCH --error=scripts/sbatchOutput/firev3_%j.err
-#SBATCH --mail-user=blake.torres@yale.edu
-#SBATCH --mail-type=ALL
 
 # example script for processing ATACseq
 ### Environment built with the following:

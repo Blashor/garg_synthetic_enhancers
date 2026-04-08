@@ -16,7 +16,7 @@ control_regions = [("chr1", 1112, 1343), ("chr1", 3890, 4120)]
 # control_regions = [("chr1", 1112, 1343), ("chr1", 3384, 3614)]  # shh
 
 # Directory and file selection
-bigwig_dir = "replicate 6"
+bigwig_dir = "../data/replicate 6"
 # bigwig_dir = "/Users/blake/Documents/gargLab/onescreen/bws_onescreen_atacrep6wdel"
 # if ("g90e" in f.lower()) and ("r6g90align" not in f.lower()) and "313" not in f.lower() or "r6g1align" in f.lower()
 # bigwig_dir = "/Users/blake/Documents/gargLab/onescreen/bws_onescreen_atacrep6wdel_2"
@@ -116,5 +116,5 @@ sns.heatmap(
 # plt.ylabel("Samples")
 # plt.xlabel("Region")
 plt.tight_layout()
-plt.savefig("grids/6.svg")
+plt.savefig("../figures/6.svg")
 plt.show()

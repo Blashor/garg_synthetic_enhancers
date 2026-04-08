@@ -133,6 +133,7 @@ sns.ecdfplot(data=snp_dist, label="SNV", alpha=0.8)
 plt.xlim([-512, 512])
 plt.ylim([0, 1.1])
 plt.legend()
+plt.savefig("../figures/s10b_adjacent_muts.svg")
 plt.show()
 
 # Where did mutations occur

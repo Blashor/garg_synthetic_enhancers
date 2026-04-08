@@ -53,7 +53,7 @@ for e in enhs:
     e2_len = int(e2) - int(b2)
     enh_len_lookup.append((e1_len, e2_len))
 enh_strings = np.zeros([1000, 50, 2]).tolist()
-with open("INSIDE_1000.txt") as file:
+with open("../data/INSIDE_1000.txt") as file:
     for line in file:
         cell = line.split("\t")
         enh_num = int(cell[1].split("_")[1])

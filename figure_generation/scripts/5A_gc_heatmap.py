@@ -48,7 +48,7 @@ with open("../data/INSIDE_jun13.txt") as file:
 
 gens_to_meta = ["G1", "G50", "G200", "G400"]
 heatmaps = {"INSIDE": [], "Shift": []}
-for label in ["INSIDE"] + list(range(1, 101)):
+for label in ["INSIDE"]:  # + list(range(1, 101)):
     meta_holder = {}
     heatmap = []
     print(label)
@@ -92,5 +92,5 @@ for label in ["INSIDE"] + list(range(1, 101)):
     ax.set_yticklabels([str(y) for y in y_ticks])
     plt.xlabel("Position (bp)")
     plt.ylabel("Generation")
-    plt.savefig("../figures/s8_gc.png", dpi=300)
+    plt.savefig("../figures/5a_gc.png", dpi=300)
     plt.show()

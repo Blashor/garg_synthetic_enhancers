@@ -92,7 +92,7 @@ with open("../data/INSIDE_jun13.txt") as file:
             line_seq_holder[cell[1]][cell[0]] = []
         line_seq_holder[cell[1]][cell[0]].append((cell[2], cell[3]))
 # print(line_seq_holder)
-with open("INSIDE_40_definitive/fimo.tsv") as file:
+with open("../data/INSIDE_40_definitive/fimo.tsv") as file:
     for line in file:
         cell = line.split("\t")
         if cell[0] != "motif_id" and len(cell) > 5:
@@ -216,7 +216,7 @@ for line in line_seq_holder:
                                 ecdf_holder[motif1[0]][gen_int]["gc2"][i] += 1
                             ecdf_holder[motif1[0]][gen_int]["total2"][i] += 1
 
-os.system("mkdir -p relative_motif_modulo_gc_within_across_INSIDE_def")
+os.system("mkdir -p ../data/s10d_relative_motif_modulo_gc_within_across_INSIDE_def")
 # print(ecdf_holder)
 # Gen 1-30, 31-60, 61-90, 91-120,121-150
 for motif_id in ecdf_holder:
@@ -270,5 +270,5 @@ for motif_id in ecdf_holder:
             plt.xticks(range(-256, 257, 128))
     plt.legend()
     plt.show()
-    plt.savefig(f"relative_motif_modulo_gc_within_across_INSIDE_def/{motif_id}.svg", dpi=300)
+    plt.savefig(f"../data/s10d_relative_motif_modulo_gc_within_across_INSIDE_def/{motif_id}.svg", dpi=300)
     plt.close()

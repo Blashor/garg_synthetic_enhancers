@@ -170,7 +170,7 @@ for e in enhs:
     e2_len = int(e2) - int(b2)
     enh_len_lookup.append((e1_len, e2_len))
 enh_strings = np.zeros([1000, 50, 2]).tolist()
-with open("INSIDE_1000.txt") as file:
+with open("../data/INSIDE_1000.txt") as file:
     for line in file:
         cell = line.split("\t")
         enh_num = int(cell[1].split("_")[1])
@@ -334,5 +334,5 @@ for f_name, filter_set in (("WW", {"AT", "AA", "TA", "TT"}), ("S", {"G", "C"})):
     plt.ylim([-0.15, 0.20])
     plt.xlim([0, 45])
     # plt.show()
-    plt.savefig(f"1000_{f_name}_ac.svg")
+    plt.savefig(f"../figures/s10e_1000_{f_name}_ac.svg")
 # print(max_len)

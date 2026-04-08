@@ -75,7 +75,7 @@ def net_x(graphing_obj, node_scores, motif_sizes, generations, motif_appears_in_
     # Add edges based on the graphing object
     for new_motif in graphing_obj:
         for old_motif in graphing_obj[new_motif]:
-            if node_scores[new_motif] < 1500 and node_scores[old_motif] < 1500:
+            if node_scores[new_motif] < 1500000 and node_scores[old_motif] < 15000000:
                 # graphing_obj[new_motif][old_motif] > 40 or
                 # if graphing_obj[new_motif][old_motif] > 40:
                 if new_motif.split(" ")[0] in allowed_motifs and old_motif.split(" ")[0] in allowed_motifs:
@@ -274,7 +274,7 @@ with open("../data/INSIDE_jun13.txt") as file:
         itr += 1
         surv_num = (itr % survivors) + 1
         cell = line.split("\t")
-        if int(cell[0].split("Gen:")[-1]) < 300:
+        if int(cell[0].split("Gen:")[-1]) < 160:
             cell[0] = "G" + str(int(cell[0].split("Gen:")[-1]) + gen_add)
             current_stat += float(cell[3])
             cell[1] += "_" + str(surv_num)
@@ -284,7 +284,7 @@ with open("../data/INSIDE_jun13.txt") as file:
                 line_seq_holder[cell[1]][cell[0]] = []
             line_seq_holder[cell[1]][cell[0]].append((cell[2], cell[3]))
 # print(line_seq_holder)
-with open("fimo_40_160/fimo.tsv") as file:
+with open("../data/INSIDE_40_definitive/fimo.tsv") as file:
     for line in file:
         cell = line.split("\t")
         if cell[0] != "motif_id" and len(cell) > 5:
@@ -294,7 +294,7 @@ with open("fimo_40_160/fimo.tsv") as file:
             chrom = f"chr{chr_n}"
             gen_n = int(gen.split("G")[-1])
             # print(cell)
-            if float(cell[-3]) < 10**-6:
+            if float(cell[-3]) < 10**-6 and gen_n < 160:
                 # print(cell[0].split("_")[0])
                 cell[0] = cell[0].split("_")[0] + "_" + score
                 motif, score = cell[0].split("_")

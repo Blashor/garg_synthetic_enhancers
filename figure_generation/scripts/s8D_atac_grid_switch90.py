@@ -16,7 +16,7 @@ control_regions = [("chr1", 1112, 1343), ("chr1", 3890, 4120)]
 # control_regions = [("chr1", 1112, 1343), ("chr1", 3384, 3614)]  # shh
 
 # Directory and file selection
-bigwig_dir = "replicate 6 switch"
+bigwig_dir = "../data/replicate 6 switch"
 # bigwig_dir = "/Users/blake/Documents/gargLab/onescreen/bws_onescreen_atacrep6wdel"
 # if ("g90e" in f.lower()) and ("r6g90align" not in f.lower()) and "313" not in f.lower() or "r6g1align" in f.lower()
 # bigwig_dir = "/Users/blake/Documents/gargLab/onescreen/bws_onescreen_atacrep6wdel_2"
@@ -43,10 +43,10 @@ bw_files = sorted(bw_files)
 bw_files = sorted(bw_files, key=extract_g_number)
 
 bw_files = [
-    "replicate 6 switch/2_r6g90align_cpm_name_1.SS_6_1_G90.bw",
-    "replicate 6 switch/2_190align_cpm_name_1.SS_r6_g1e1_g90e2.bw",
-    "replicate 6 switch/2_901align_cpm_name_1.SS_r6_g90e1_g1e2.bw",
-    "replicate 6 switch/2_r6g1align_cpm_name_1.SS_6_1_G1.bw",
+    "../data/replicate 6 switch/2_r6g90align_cpm_name_1.SS_6_1_G90.bw",
+    "../data/replicate 6 switch/2_190align_cpm_name_1.SS_r6_g1e1_g90e2.bw",
+    "../data/replicate 6 switch/2_901align_cpm_name_1.SS_r6_g90e1_g1e2.bw",
+    "../data/replicate 6 switch/2_r6g1align_cpm_name_1.SS_6_1_G1.bw",
     # "replicate 6 switch/r6g1align_cpm_name_1.SS_6_1_G1.bw",
 ]
 # Set reference file
@@ -123,5 +123,5 @@ sns.heatmap(
 # plt.ylabel("Samples")
 # plt.xlabel("Region")
 plt.tight_layout()
-plt.savefig("grids/switch90.svg")
+plt.savefig("../figures/switch90.svg")
 plt.show()

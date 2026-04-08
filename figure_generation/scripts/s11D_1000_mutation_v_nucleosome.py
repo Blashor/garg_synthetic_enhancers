@@ -30,7 +30,7 @@ enh_dict = {}
 gen_to_count = 10
 for gen_to_count in [10, 20, 50]:
     print(gen_to_count)
-    with open("INSIDE_1000.txt") as file:
+    with open("../data/INSIDE_1000.txt") as file:
         for line in file:
             cell = line.split("\t")
             if cell[1] not in enh_dict:

@@ -34,8 +34,8 @@ def main(file_name="../data/3runs-FIRE.bed", file_out=""):
 def mains(
     file_names=[
         "../data/3runs-FDR-FIRE-peaks.bed",
-        "../data/SRX10040677_dnase.05.bed",
-        "../data/SRX23682289_atac2.05.bed",
+        "../data/SRX10040677.05.bed",
+        "../data/SRX23682289.05.bed",
     ],
     file_out="",
 ):

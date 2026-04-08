@@ -67,7 +67,7 @@ def gff_to_bed(gff="../data/gencode.vM23.annotation.gff3"):
         file.writelines(gff_bed_lines)
     lines = []
     linesToFile = []
-    with open("../../../CHIPseq/H3K27ac.narrowpeak", "r") as file:
+    with open("../data/H3K27ac.narrowpeak", "r") as file:
         lines = file.read().split("\n")
     for line in lines:
         cells = line.split("\t")[:3]

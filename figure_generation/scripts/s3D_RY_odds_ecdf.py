@@ -54,5 +54,5 @@ fps = [
     "../data/ce_rank_no_dist_correctionOSN_stitched_control0.txt",
 ]
 main(
-    fps, labels=["Super", "Stitched", "Control"], colors=["pink", "brown", "grey"], save="../figures/s4d_whyte_ecdf.svg"
+    fps, labels=["Super", "Stitched", "Control"], colors=["pink", "brown", "grey"], save="../figures/s3d_whyte_ecdf.svg"
 )

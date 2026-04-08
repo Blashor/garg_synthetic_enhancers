@@ -116,7 +116,7 @@ with open("../data/INSIDE_jun13.txt") as file:
             line_seq_holder[cell[1]][cell[0]] = []
         line_seq_holder[cell[1]][cell[0]].append((cell[2], cell[3]))
 # print(line_seq_holder)
-with open("INSIDE_40_definitive/fimo.tsv") as file:
+with open("../data/INSIDE_40_definitive/fimo.tsv") as file:
     for line in file:
         cell = line.split("\t")
         if cell[0] != "motif_id" and len(cell) > 5:
@@ -191,7 +191,7 @@ for line in line_seq_holder:
 
         if gen_int == 200:
             # > 147.5
-            if score < 100 and len(motifs) > 0:
+            if score > 147.5 and len(motifs) > 0:
                 fail_to_rise.add(line)
 
     # Cache only necessary data

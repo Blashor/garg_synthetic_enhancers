@@ -34,7 +34,7 @@ def string_diff(a, b):
 
 enh_dict = {}
 # with open("INSIDE_1000.txt") as file:
-with open("../INSIDE/INSIDE_genome_sep12_75gens.txt") as file:
+with open("../data/INSIDE_genome_sep12_75gens.txt") as file:
     for line in file:
         cell = line.split("\t")
         if cell[1] not in enh_dict:
@@ -297,5 +297,5 @@ for diff in diff50:
         ax[4].axvline(d + 1307, linestyle="--", color=color, alpha=1, linewidth=0.6)
     # fig.tight_layout()
 plt.subplots_adjust(hspace=0.2)
-plt.savefig("daf_shh_nuc.svg")
+plt.savefig("../figures/6d_daf_shh_nuc.svg")
 plt.show()

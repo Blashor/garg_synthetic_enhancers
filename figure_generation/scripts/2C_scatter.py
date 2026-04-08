@@ -105,6 +105,7 @@ plt.ylabel("Log2 Experiment")
 # plt.xlim([0, 8])
 
 # Show the plot
+plt.savefig("../figures/2c_scatter.svg")
 plt.show()
 
 # Print Pearson correlation coefficient

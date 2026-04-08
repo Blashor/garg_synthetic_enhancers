@@ -17,7 +17,7 @@ def meta_motif_by_gen():
         for line in file:
             cell = line.strip().split("\t")
             if len(cell) > 3:
-                # print(cell[2])
+                print(cell[2])
                 if "rep1" in cell[2]:
                     i_line, id_line, rep, gen, surv, coop_stat = cell[2].split("_")
                     i_line = i_line + "_" + id_line
@@ -42,12 +42,13 @@ def meta_motif_by_gen():
             sns.lineplot(x=np.arange(len(plot_motif)), y=plot_motif, label=motif)
     plt.ylabel("Motif Occurences")
     plt.xlabel("Generation")
+    plt.savefig("../figures/s11a_motif_line.svg")
     plt.show()
     # print(motif_gen_obj[motif])
 
 
 allowed_motifs = set(["BACH2", "SOX2", "ZIC3", "PO2F2", "PO5F1", "NANOG", "LEF1", "PO2F1", "CTCF", "REST"])
-INSIDE_file = "INSIDE_1000.txt"
+INSIDE_file = "../data/INSIDE_1000.txt"
 fimo_folder = "../data/INSIDE_1000"
 # generate_fimo()
 # motif_by_gen(36)

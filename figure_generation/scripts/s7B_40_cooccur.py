@@ -47,7 +47,7 @@ def plot_motif_cooccurrence(motif_sets):
     plt.setp(cluster.ax_heatmap.yaxis.get_majorticklabels(), fontsize=8)
     plt.setp(cluster.ax_heatmap.xaxis.get_majorticklabels(), fontsize=8)
     # plt.title("Motif Co-occurrence Matrix")
-    plt.savefig("/Users/blake/Documents/gargLab/Figures_for_Box/Figure_3_INSIDE/figures/s8c_cooccur.svg")
+    plt.savefig("../figures/s8c_cooccur.svg")
     plt.show()
 
 
@@ -89,7 +89,7 @@ with open("../data/INSIDE_jun13.txt") as file:
             line_seq_holder[cell[1]][cell[0]] = []
         line_seq_holder[cell[1]][cell[0]].append((cell[2], cell[3]))
 # print(line_seq_holder)
-with open("INSIDE_40_definitive/fimo.tsv") as file:
+with open("../data/INSIDE_40_definitive/fimo.tsv") as file:
     for line in file:
         cell = line.split("\t")
         if cell[0] != "motif_id" and len(cell) > 5:

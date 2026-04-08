@@ -16,7 +16,7 @@ control_regions = [("chr1", 1112, 1343), ("chr1", 3890, 4120)]
 # control_regions = [("chr1", 1112, 1343), ("chr1", 3384, 3614)]  # shh
 
 # Directory and file selection
-bigwig_dir = "rep6 del_supp"
+bigwig_dir = "../data/rep6 del_supp"
 # bigwig_dir = "/Users/blake/Documents/gargLab/onescreen/bws_onescreen_atacrep6wdel"
 # if ("g90e" in f.lower()) and ("r6g90align" not in f.lower()) and "313" not in f.lower() or "r6g1align" in f.lower()
 # bigwig_dir = "/Users/blake/Documents/gargLab/onescreen/bws_onescreen_atacrep6wdel_2"
@@ -43,15 +43,15 @@ bw_files = sorted(bw_files)
 bw_files = sorted(bw_files, key=extract_g_number)
 
 bw_files = [
-    "rep6 del_supp/r6g90align_cpm_name_1.SS_6_1_G90.bw",
-    "rep6 del_supp/osn1align_cpm_name_1.SS_OSN1Del.bw",
-    "rep6 del_supp/osn2delalign_cpm_name_1.SS_OSN2Del.bw",
-    "rep6 del_supp/osn3delalign_cpm_name_1.SS_OSN3Del.bw",
-    "rep6 del_supp/zic3delalign_cpm_name_1.SS_6_90_ZIC3Del.bw",
-    "rep6 del_supp/fourdelalign_cpm_name_1.SS_4Del.bw",
-    "rep6 del_supp/gcdelalign_cpm_name_1.SS_GCDel.bw",
-    "rep6 del_supp/fourgcdelalign_cpm_name_1.SS_4GCDel.bw",
-    "rep6 del_supp/r6g1align_cpm_name_1.SS_6_1_G1.bw",
+    "../data/rep6 del_supp/r6g90align_cpm_name_1.SS_6_1_G90.bw",
+    "../data/rep6 del_supp/osn1align_cpm_name_1.SS_OSN1Del.bw",
+    "../data/rep6 del_supp/osn2delalign_cpm_name_1.SS_OSN2Del.bw",
+    "../data/rep6 del_supp/osn3delalign_cpm_name_1.SS_OSN3Del.bw",
+    "../data/rep6 del_supp/zic3delalign_cpm_name_1.SS_6_90_ZIC3Del.bw",
+    "../data/rep6 del_supp/fourdelalign_cpm_name_1.SS_4Del.bw",
+    "../data/rep6 del_supp/gcdelalign_cpm_name_1.SS_GCDel.bw",
+    "../data/rep6 del_supp/fourgcdelalign_cpm_name_1.SS_4GCDel.bw",
+    "../data/rep6 del_supp/r6g1align_cpm_name_1.SS_6_1_G1.bw",
 ]
 # Set reference file
 ref_file = next(f for f in bw_files_messy if "r6g90align" in f.lower())
@@ -127,5 +127,5 @@ sns.heatmap(
 # plt.ylabel("Samples")
 # plt.xlabel("Region")
 plt.tight_layout()
-plt.savefig("grids/suppdel.svg")
+plt.savefig("../figures/suppdel.svg")
 plt.show()

@@ -109,4 +109,4 @@ for example in examples:
     gen_holder = main(example)
     name = example.split("/")[-1] + ".svg"
     # score_by_gen(gen_holder, f"../figures/{name}")
-    score_by_gen(gen_holder, f"../data/a{name}")
+    score_by_gen(gen_holder, f"../figures/s6_{name}")

@@ -113,7 +113,7 @@ filter_entries = [
 fe60 = ["marg60.bam.msp.bed", "mar160.bam.msp.bed", "mar601.bam.msp.bed", "marg1.bam.msp.bed"]
 fe90 = ["marg90.bam.msp.bed", "mar190.bam.msp.bed", "mar901.bam.msp.bed", "marg1.bam.msp.bed"]
 
-for filter_entries, file_save in ((fe60, "../figures/switch60.svg"), (fe90, "../figures/switch90.svg")):
+for filter_entries, file_save in ((fe60, "../figures/4c_switch60.svg"), (fe90, "../figures/4c_switch90.svg")):
     """
     filter_entries = [
         "sepr6g90.bam.msp.bed",

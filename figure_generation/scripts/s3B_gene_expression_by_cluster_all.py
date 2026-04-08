@@ -12,7 +12,7 @@ def get_gene_connection():
     gene_expression_dict = get_expression_count()
     # print(gene_expression_dict)
     ce_to_expression = {}
-    with open("/Users/blake/Documents/gargLab/FIRE_story_v1/data/ce_gene_closest.bed") as file:
+    with open("../data/ce_gene_closest.bed") as file:
         for line in file:
             # print(line)
             cell = line.strip().split("\t")
@@ -32,7 +32,7 @@ def get_expression_count():
     gene_expression_dict = {}
     # data/whyte2013_expression.txt
     # "../FIRE_story_v1/data/esc_expression_level_3states.tsv"
-    with open("../FIRE_story_v1/data/esc_expression_level_3states.tsv") as file:
+    with open("../data/esc_expression_level_3states.tsv") as file:
         cell_num = -1
         for line in file:
             print(line)
@@ -65,7 +65,7 @@ def get_CEs_by_cluster_and_gene_expression():
     ax.tick_params(axis="both", width=2)
     ce_to_expression = get_gene_connection()
     # print(ce_to_expression)
-    with open("/Users/blake/Documents/gargLab/fire_story_v3/fire_ry_comparable.svg3.bed") as file:
+    with open("../data/fire_3runs_BOX.svg3.bed") as file:
         for line in file:
             if "deepTools_group" not in line:
                 cell = line.strip().split("\t")
@@ -73,7 +73,7 @@ def get_CEs_by_cluster_and_gene_expression():
                 cluster_labels[ce_name] = int(cell[-1][-1])
     used_genes = set()
     used_stitches = set()
-    with open("/Users/blake/Documents/gargLab/Figures_for_Box/Figure_1_Ranking/data/3runs_ce_rank.txt") as file:
+    with open("../data/3runs_ce_rank.txt") as file:
         for line in file:
             if ":" in line:
                 ceA, ceB, stitch, OR, rank, isSuper = line.split("\t")
@@ -155,7 +155,7 @@ def get_CEs_by_cluster_and_gene_expression():
     plt.ylim(([-999, 7000]))
     ax.set_xticklabels(box_labels, rotation=-30, ha="center")
     plt.tight_layout()
-    plt.savefig("cluster_1b_nonile.svg")
+    plt.savefig("../figures/s3b_cluster_all.svg")
     plt.show()
 
 

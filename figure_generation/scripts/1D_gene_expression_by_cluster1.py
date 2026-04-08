@@ -154,7 +154,7 @@ def get_CEs_by_cluster_and_gene_expression():
     plt.ylim(([-999, 7000]))
     ax.set_xticklabels(box_labels, rotation=-30, ha="center")
     plt.tight_layout()
-    plt.savefig("../figures/cluster_1b_nonile.svg")
+    plt.savefig("../figures/1d_cluster_nonile.svg")
     plt.show()
 
 

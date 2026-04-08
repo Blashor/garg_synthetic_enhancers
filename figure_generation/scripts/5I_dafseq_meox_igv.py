@@ -227,5 +227,5 @@ for fei, f in enumerate(filter_entries):
     ax[2 * fei + 1].set_ylim(0, fi)
     # fig.tight_layout()
 plt.subplots_adjust(hspace=0.2)
-plt.savefig("daf_meox_msp.svg")
+plt.savefig("../figures/5i_daf_meox_msp.svg")
 plt.show()

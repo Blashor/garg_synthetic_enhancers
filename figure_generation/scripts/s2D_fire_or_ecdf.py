@@ -461,7 +461,7 @@ def main():
     # plt.xlabel("log(Odds Ratio)")
 
     plt.show()
-    plt.savefig("control_odds_ratio.svg")
+    plt.savefig("../figures/control_odds_ratio.svg")
 
 
 main()
