@@ -527,13 +527,13 @@ def load_object():
         return json_data
 
 
-prefixes = ["../data/K562"]
+# prefixes = ["../data/K562"]
 # prefixes = ["FIRE_peaks_stitch_ROSElike"]
 
 
 def main():
     global prefix
-    # prefixes = sys.argv[1:]
+    prefixes = sys.argv[1:]
     for prefix in prefixes:
         print(prefix)
         mat = load_object()

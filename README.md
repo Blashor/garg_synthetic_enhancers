@@ -32,7 +32,7 @@ See https://github.com/calico/basenji for further documentation
 **Running instructions**  
 
 1. Basenji input tracks are prepared with `make_bigwig_tracks`
-   - Basenji input tracks are avaiable at `HTTPS ZENODO`
+   - Basenji input tracks are avaiable at https://zenodo.org/records/19463376
 2. Basenji Pipeline is run with `run_basenji.sh`
    - Model weights are available in the subdirectory `basenji_pipeline\model_params`
 
@@ -62,7 +62,7 @@ See methods in https://www.biorxiv.org/content/10.1101/2024.11.06.622310v1 for f
 ---
 
 ### `figure_generation`
-Generates all figures associated with the study. Scripts are organized such that file names correspond directly to the figure panels they produce (e.g., main figures and supplementary figures). The processed `data` directory is avaiable at `HTTPS TODO ZENODO`
+Generates all figures associated with the study. Scripts are organized such that file names correspond directly to the figure panels they produce (e.g., main figures and supplementary figures). The processed `data` directory is available at https://zenodo.org/records/19463376
 
 
 

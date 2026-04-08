@@ -1,8 +1,9 @@
 Processed 'data' files are hosted at "ZENODO":
 
-10.5281/zenodo.19463376
+https://zenodo.org/records/19463376
 
 data.zip should be uncompressed and placed in figure_generation/
+model_weights.zip contains trained models weights
 model_input_data.zip contains bigwig tracks used to train basenji models
 gastruloids.zip contains images of shh gastruloids
 
