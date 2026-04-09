@@ -32,7 +32,7 @@ See https://github.com/calico/basenji for further documentation
 **Running instructions**  
 
 1. Basenji input tracks are prepared with `make_bigwig_tracks`
-   - Basenji input tracks are avaiable at https://zenodo.org/records/19463376
+   - Basenji input tracks are avaiable at https://zenodo.org/records/19477875
 2. Basenji Pipeline is run with `run_basenji.sh`
    - Model weights are available in the subdirectory `basenji_pipeline\model_params`
 
@@ -62,7 +62,7 @@ See methods in https://www.biorxiv.org/content/10.1101/2024.11.06.622310v1 for f
 ---
 
 ### `figure_generation`
-Generates all figures associated with the study. Scripts are organized such that file names correspond directly to the figure panels they produce (e.g., main figures and supplementary figures). The processed `data` directory is available at https://zenodo.org/records/19463376
+Generates all figures associated with the study. Scripts are organized such that file names correspond directly to the figure panels they produce (e.g., main figures and supplementary figures). The processed `data` directory is available at https://zenodo.org/records/19477875
 
 
 
@@ -84,6 +84,6 @@ This repository contains multiple analysis pipelines, each with distinct softwar
 \* `run_fire.sh` requires `FIRE.yml` instead.
 
 # Data Reproducibility
-Processed data for this project is hosted at ZENODO as well as external public repositories
+Processed data for this project is hosted at https://zenodo.org/records/19477875 as well as external public repositories
 
 &emsp;See `data_reproducibility.txt` for download instructions
