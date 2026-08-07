@@ -50,6 +50,7 @@ def meta_motif_by_gen():
 
 palette_big = sns.color_palette("hls", 24)
 palette_small = sns.color_palette("hls", 7)
+palette_massive = sns.color_palette("hls", 48)
 motif_color_map = {
     "POU5F1": palette_big[0],
     "SOX2": palette_big[1],
@@ -60,15 +61,19 @@ motif_color_map = {
     "CTCF": palette_small[4],
     "POU2F2": palette_big[11],
     "POU3F1": palette_big[12],
-    "POU2F1": palette_big[13],
+    "KLF4": palette_massive[42],
+    "SP2": palette_massive[40],
+    "SP3": palette_massive[41],
     "None": (0, 0, 0, 0.9),
 }
 
 
-allowed_motifs = set(["BACH2", "SOX2", "ZIC3", "PO2F2", "PO5F1", "NANOG", "LEF1", "PO2F1", "CTCF", "REST"])
+allowed_motifs = set(
+    ["BACH2", "SOX2", "ZIC3", "PO2F2", "PO5F1", "NANOG", "LEF1", "PO2F1", "CTCF", "REST", "KLF4", "SP2", "SP3"]
+)
 
-INSIDE_file = "../data/INSIDE_jun13.txt"
-fimo_folder = "../data/INSIDE_40_definitive"
+INSIDE_file = "../data/data/INSIDE_jun13.txt"
+fimo_folder = "../data/data/INSIDE_40_definitive"
 # generate_fimo()
 # motif_by_gen(36)
 meta_motif_by_gen()
