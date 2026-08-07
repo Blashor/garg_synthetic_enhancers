@@ -72,8 +72,8 @@ allowed_motifs = set(
     ["BACH2", "SOX2", "ZIC3", "PO2F2", "PO5F1", "NANOG", "LEF1", "PO2F1", "CTCF", "REST", "KLF4", "SP2", "SP3"]
 )
 
-INSIDE_file = "../data/data/INSIDE_jun13.txt"
-fimo_folder = "../data/data/INSIDE_40_definitive"
+INSIDE_file = "../data/INSIDE_jun13.txt"
+fimo_folder = "../data/INSIDE_40_definitive"
 # generate_fimo()
 # motif_by_gen(36)
 meta_motif_by_gen()
